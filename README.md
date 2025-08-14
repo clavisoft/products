@@ -1,6 +1,6 @@
 # ms-products - Gestión de Productos
 
-> Este microservicio es parte del proyecto original: [Repositorio principal](https://github.com/KezelHugo/parcial)
+> Este es microservicio de productos
 > 
 > En el repositorio original están la colección de Postman y el informe de Sonar.
 
