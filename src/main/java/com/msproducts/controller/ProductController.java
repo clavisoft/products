@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+
 
 import com.msproducts.dto.ProductDTO;
 import com.msproducts.dto.ProductStockValidationDTO;
@@ -27,7 +29,8 @@ import jakarta.validation.constraints.NotBlank;
 
 @Validated
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
+
 public class ProductController {
 
     private final ProductService productService;
@@ -104,3 +107,5 @@ public ResponseEntity<String> decreaseStock(
 }
 
 }
+
+
